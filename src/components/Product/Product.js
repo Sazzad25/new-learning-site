@@ -5,11 +5,11 @@ import './Product.css';
 
 const Product = ({product, handleAddToCart}) => {
     // const {product, handleAddToCart} = props;
-    const { name, img, seller, price, ratings } = product;
+    const { name, logo, seller, price, ratings } = product;
     
     return (
         <div className='product'>
-            <img src={img} alt=""></img>
+            <img src={logo} alt=""></img>
             <div className='product-info'>
                 <p className='product-name'>{name}</p>
                 <p>Price: ${price}</p>

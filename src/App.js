@@ -15,7 +15,7 @@ function App() {
       children: [
         {
           path: '/',
-          loader: () => fetch('products.json'),
+          loader: () => fetch(`https://openapi.programming-hero.com/api/quiz`),
           element: <Shop/>
         },
         

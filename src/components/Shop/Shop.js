@@ -22,12 +22,12 @@ const Shop = () => {
     const storedCart = getStoredCart();
     const savedCart = [];
     for (const id in storedCart) {
-      const addedProduct = products.find((product) => product.id === id);
-      if (addedProduct) {
-        const quantity = storedCart[id];
-        addedProduct.quantity = quantity;
-        savedCart.push(addedProduct);
-      }
+      // const addedProduct = products.find((product) => product.id === id);
+      // if (addedProduct) {
+      //   const quantity = storedCart[id];
+      //   addedProduct.quantity = quantity;
+      //   savedCart.push(addedProduct);
+      // }
     }
     setCart(savedCart);
   }, [products]);
@@ -52,7 +52,7 @@ const Shop = () => {
   return (
     <div className="shop-container">
       <div className="products-container">
-        {products.map((product) => (
+        {products.data.map((product) => (
           <Product
             key={product.id}
             product={product}
