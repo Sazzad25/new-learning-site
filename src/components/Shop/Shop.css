@@ -16,3 +16,18 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.flex{
+    height: 80px;
+    /* background-color: #1C2B35; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.pic{
+    height: 50px;
+    width: 100px;
+}

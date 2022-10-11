@@ -8,6 +8,7 @@ import {
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
 import "./Shop.css";
+import logo from '../../images/giphy.gif';
 
 const Shop = () => {
   const products = useLoaderData();
@@ -17,6 +18,8 @@ const Shop = () => {
     setCart([]);
     deleteShoppingCart();
   };
+
+  
 
   useEffect(() => {
     const storedCart = getStoredCart();
@@ -50,6 +53,11 @@ const Shop = () => {
   };
 
   return (
+    <div>
+      <div className="flex">
+      <h4>This is react dom website. I am very happy to have made it. Hope you will like this website very much. Thank you all for visiting my website.</h4>
+      <img className="pic" src={logo} alt="" />
+      </div>
     <div className="shop-container">
       <div className="products-container">
         {products.data.map((product) => (
@@ -67,6 +75,7 @@ const Shop = () => {
           </Link>
         </Cart>
       </div>
+    </div>
     </div>
   );
 };

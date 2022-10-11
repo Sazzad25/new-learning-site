@@ -5,19 +5,17 @@ import './Product.css';
 
 const Product = ({product, handleAddToCart}) => {
     // const {product, handleAddToCart} = props;
-    const { name, logo, seller, price, ratings } = product;
+    const { name, logo, total } = product;
     
     return (
         <div className='product'>
             <img src={logo} alt=""></img>
             <div className='product-info'>
                 <p className='product-name'>{name}</p>
-                <p>Price: ${price}</p>
-                <p><small>Seller: {seller}</small></p>
-                <p><small>Ratings: {ratings} stars</small></p>
+                <p>Total: {total}</p>
             </div>
             <button onClick={() => handleAddToCart(product)} className='btn-cart'>
-                <p className='btn-text'>Add to Cart</p>
+                <p className='btn-text'>Go to Quize</p>
                 <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
             </button>
         </div>
