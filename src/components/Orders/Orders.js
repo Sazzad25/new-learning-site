@@ -29,9 +29,6 @@ const Orders = () => {
             {
                 orders.data.questions.map(order => <Quize key={order.id} order={order}></Quize>)
             }
-            
-
-
            
         </div>
     );
