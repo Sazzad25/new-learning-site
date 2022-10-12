@@ -5,7 +5,7 @@ import Cart from '../Cart/Cart';
 import Quize from '../Quize/Quize';
 import ReviewItem from '../ReviewItem/ReviewItem';
 
-const Orders = () => {
+const Quizes = () => {
     // const {initialCart} = useLoaderData();
     const orders = useLoaderData();
     console.log(orders);
@@ -34,4 +34,4 @@ const Orders = () => {
     );
 };
 
-export default Orders;
+export default Quizes;

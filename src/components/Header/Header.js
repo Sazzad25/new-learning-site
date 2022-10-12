@@ -9,10 +9,10 @@ const Header = () => {
             {/* <img src={logo} alt="" /> */}
             <h3 className='web-name'>proLearning</h3>
             <div>
-                <Link to="/">Shop</Link>
-                <Link to="/orders">Orders</Link>
-                <Link to="/inventory">Inventory</Link>
-                <Link to="/about">About</Link>
+                <Link to="/">Home</Link>
+                <Link to="/quizes">Quizes</Link>
+                <Link to="/statistics">Statistics</Link>
+                <Link to="/blog">Blog</Link>
                 <Link to="/error">Error</Link>
             </div>
         </nav>

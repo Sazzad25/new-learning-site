@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import About from './components/About/About';
-import Inventory from './components/Inventory/Inventory';
+import Blog from './components/Blog/Blog';
+import Statistics from './components/Statistics/Statistics';
 import { productsAndCartLoader } from './components/Loaders/productsAndCartLoader';
-import Orders from './components/Orders/Orders';
+import Quizes from './components/Quizes/Quizes';
 import QuizeDetails from './components/QuizeDetails/QuizeDetails';
-import Shop from './components/Shop/Shop';
+import Home from './components/Home/Home';
 import Main from './layouts/Main';
 
 function App() {
@@ -17,17 +17,17 @@ function App() {
         {
           path: '/',
           loader: () => fetch(`https://openapi.programming-hero.com/api/quiz`),
-          element: <Shop/>
+          element: <Home/>
         },
         
         {
-          path:'orders',
+          path:'quizes',
           // loader: productsAndCartLoader,
           loader: async() =>{
             return fetch(' https://openapi.programming-hero.com/api/quiz/1');
           },
          
-          element: <Orders/>
+          element: <Quizes/>
         },
 
         // {
@@ -39,12 +39,12 @@ function App() {
         // },
 
         {
-          path:'inventory',
-          element: <Inventory/>
+          path:'statistics',
+          element: <Statistics/>
         },
         {
-          path:'about',
-          element: <About/>
+          path:'blog',
+          element: <Blog/>
         },
         {
           path:'*',

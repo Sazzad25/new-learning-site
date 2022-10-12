@@ -4,7 +4,7 @@ proLearning
 
 
 ## Live Link
-Hosted in Netlify -> [proLearning](https://proreader.netlify.app/)
+Hosted in Netlify ->
 
 
 ### Projet Deatils

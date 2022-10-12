@@ -1,6 +1,6 @@
 import React from 'react';
 
-const About = () => {
+const Blog = () => {
     return (
         <div>
             <div>
@@ -20,4 +20,4 @@ Let us create a simple application to React to understand how the React Router w
     );
 };
 
-export default About;
+export default Blog;

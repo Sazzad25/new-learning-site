@@ -7,10 +7,10 @@ import {
 } from "../../utilities/fakedb";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
-import "./Shop.css";
+import './Home.css';
 import logo from '../../images/giphy.gif';
 
-const Shop = () => {
+const Home = () => {
   const products = useLoaderData();
   const [cart, setCart] = useState([]);
 
@@ -19,21 +19,6 @@ const Shop = () => {
     deleteShoppingCart();
   };
 
-  
-
-  useEffect(() => {
-    const storedCart = getStoredCart();
-    const savedCart = [];
-    for (const id in storedCart) {
-      // const addedProduct = products.find((product) => product.id === id);
-      // if (addedProduct) {
-      //   const quantity = storedCart[id];
-      //   addedProduct.quantity = quantity;
-      //   savedCart.push(addedProduct);
-      // }
-    }
-    setCart(savedCart);
-  }, [products]);
 
   const handleAddToCart = (selectedProduct) => {
     console.log(selectedProduct);
@@ -80,4 +65,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default Home;
