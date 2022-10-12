@@ -1,0 +1,15 @@
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+
+.quize{
+    border: 2px solid peru;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}

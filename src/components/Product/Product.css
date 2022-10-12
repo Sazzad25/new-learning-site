@@ -4,6 +4,7 @@
     border: 1px solid #95A0A7;
     border-radius: 8px;
     position: relative;
+    background-color: gray;
 }
 .product img{
     width: 286px;
@@ -28,7 +29,7 @@
 }
 .btn-cart{
     width: 100%;
-    background: brown;
+    background: violet;
     border: none;
     border-radius: 0px 0px 8px 8px;
     position: absolute;
