@@ -55,7 +55,7 @@ const Home = () => {
       </div>
       <div className="cart-container">
         <Cart clearCart={clearCart} cart={cart}>
-          <Link to="/orders">
+          <Link to="/quizes">
             <button>Review Order</button>
           </Link>
         </Cart>

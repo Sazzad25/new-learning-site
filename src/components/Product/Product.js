@@ -14,7 +14,7 @@ const Product = ({product, handleAddToCart}) => {
                 <p className='product-name'>{name}</p>
                 <p>Total: {total}</p>
             </div>
-            <a onClick={() => handleAddToCart(product)} className='btn-cart' href='/orders'
+            <a onClick={() => handleAddToCart(product)} className='btn-cart' href='/quizes'
               aria-label=''>
                 <p className='btn-text'>Go to Quize</p>
                 <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>

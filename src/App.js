@@ -2,9 +2,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './components/Blog/Blog';
 import Statistics from './components/Statistics/Statistics';
-import { productsAndCartLoader } from './components/Loaders/productsAndCartLoader';
+// import { productsAndCartLoader } from './components/Loaders/productsAndCartLoader';
 import Quizes from './components/Quizes/Quizes';
-import QuizeDetails from './components/QuizeDetails/QuizeDetails';
+// import QuizeDetails from './components/QuizeDetails/QuizeDetails';
 import Home from './components/Home/Home';
 import Main from './layouts/Main';
 
