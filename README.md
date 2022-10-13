@@ -4,7 +4,7 @@ proLearning
 
 
 ## Live Link
-Hosted in Netlify ->
+Hosted in Netlify -> https://dynamic-haupia-a4710a.netlify.app/
 
 
 ### Projet Deatils
